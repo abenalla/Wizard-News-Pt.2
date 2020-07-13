@@ -6,7 +6,7 @@ const postDetails = require("./views/postDetails");
 
 const app = express();
 
-app.use(morgan('dev'));
+app.use(morgan("dev"));
 app.use(express.static(__dirname + "/public"));
 
 app.get("/", (req, res) => {
